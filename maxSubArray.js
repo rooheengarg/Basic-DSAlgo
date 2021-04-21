@@ -30,9 +30,13 @@ function findmaxSubarray(arr) {
   console.log("left:", left);
 }
 
-// findmaxSubarray(input);
+[];
+
+findmaxSubarray(input);
 
 //2. use Kadane's algorithm
+// in case of all positive elements -> return sum of all elements
+// in case of all negative elements -> return 0
 
 function kadaneImplementation(arr) {
   let currSum = 0;
@@ -46,4 +50,5 @@ function kadaneImplementation(arr) {
   console.log("maxSum", maxSum);
 }
 
-kadaneImplementation([-2, -1, -3, -4, -1, -2, -1, -5, -4]);
+// kadaneImplementation([-2, -1, 3, -4, 1, -2, 1, -5, -4]);
+kadaneImplementation(input);

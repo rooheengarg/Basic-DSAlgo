@@ -56,17 +56,20 @@ function heightOfTree(root) {
   if (!root) return -1;
 
   let LTree = heightOfTree(root.left);
-  console.log("Ltree =>", LTree);
+  // console.log("Ltree =>", LTree);
   let RTree = heightOfTree(root.right);
-  console.log("Rtree =>", RTree);
+  // console.log("Rtree =>", RTree);
 
-  if (LTree > RTree) {
-    console.log("hey in L =>", LTree);
-    return LTree + 1;
-  } else {
-    console.log("hey in R =>", RTree);
-    return RTree + 1;
-  }
+  // if (LTree > RTree) {
+  //   console.log("hey in L =>", LTree);
+  //   return LTree + 1;
+  // } else {
+  //   console.log("hey in R =>", RTree);
+  //   return RTree + 1;
+  // }
+
+  //above commented code can also be written as
+  return Math.max(LTree, RTree) + 1;
 }
 
 console.log(heightOfTree(newTree.root));

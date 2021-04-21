@@ -91,7 +91,7 @@ for(var i=1 to n) {
         n = q.size();
         timer++;
             while(n--) {
-             var el = q.unshift();
+             var el = q.shift();
              rottenCount++
             var ptr = reverseHash(el);
             if(input[ptr[0]][ptr[1]-1] && input[ptr[0]][ptr[1]-1] === FRESH) {
